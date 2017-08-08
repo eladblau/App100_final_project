@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:id="@+id/RelativeLayoutEventList1">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="15dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/otherButton">
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/carTheftImageButton"
+                android:src="@drawable/car_accident"
+                android:background="@drawable/event_button"
+                android:scaleType="centerInside"
+                android:layout_margin="10dp"
+                android:contentDescription="Car accident" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Car Accident"
+                android:id="@+id/textViewCarAccident1"
+                android:layout_below="@+id/carTheftImageButton"
+                android:layout_alignStart="@+id/carTheftImageButton" />
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/imageButtonDomesticViolence"
+                android:src="@drawable/domestic_violence_icon"
+                android:background="@drawable/event_button"
+                android:scaleType="centerInside"
+                android:contentDescription="Domestic Violence"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Domestic violence"
+                android:id="@+id/textViewDomesticViolence"
+                android:layout_below="@+id/imageButtonDomesticViolence"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignEnd="@+id/otherButton">
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/ImageButtonKiddnaping"
+                android:src="@drawable/kidnapping_icon"
+                android:background="@drawable/event_button"
+                android:scaleType="centerInside"
+                android:layout_margin="10dp"
+                android:theme="@style/AppTheme" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Kidnapping"
+                android:id="@+id/textViewKidnapping"
+                android:layout_below="@+id/ImageButtonKiddnaping"
+                android:layout_alignEnd="@+id/ImageButtonKiddnaping" />
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/imageButtonTerrorism"
+                android:src="@drawable/terrorism_icon"
+                android:background="@drawable/event_button"
+                android:scaleType="centerInside"
+                android:theme="@style/AppTheme"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Terrorism"
+                android:id="@+id/textViewTerrorism"
+                android:layout_below="@+id/imageButtonTerrorism"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp" />
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="290dp"
+            android:layout_height="60dp"
+            android:id="@+id/otherButton"
+            android:src="@drawable/other"
+            android:background="@drawable/event_button"
+            android:scaleType="centerInside"
+            android:theme="@style/AppTheme"
+            android:text="@string/other"
+            android:textColor="@color/Black"
+            android:textSize="35dp"
+            android:textAlignment="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="43dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="he" type="id">hebrew</item>
+    <item name="en" type="id">english</item>
+</resources>

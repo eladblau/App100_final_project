@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.eladblau.app100.MainActivity2">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <Button
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:text="@string/report"
+                android:id="@+id/button_report"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.09"
+                android:background="@drawable/event_button"
+                android:layout_below="@+id/textViewQuestion1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="77dp" />
+
+            <Button
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:text="@string/make_a_call"
+                android:id="@+id/button_call"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.09"
+                android:layout_below="@+id/button_report"
+                android:background="@drawable/event_button"
+                android:layout_alignStart="@+id/button_report"
+                android:layout_marginTop="103dp" />@+id/button_report" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="What would you like to do?"
+                android:id="@+id/textViewQuestion1"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="64dp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

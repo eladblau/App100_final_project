@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">App 100</string>
+    <string name="action_settings">הגדרות</string>
+    <string name="action_language">English</string>
+    <string name="other">אחר</string>
+    <string name="report">דיווח</string>
+    <string name="make_a_call">חייג למוקד</string>
+    <string name="your_location">מיקומך</string>
+    <string name="event_type">סוג אירוע</string>
+    <string name="event_description">תיאור</string>
+    <string name="send">שלח</string>
+    <string name="title_activity_main_activity2">MainActivity2</string>
+
+
+</resources>

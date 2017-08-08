@@ -1,0 +1,41 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'MyAndroidKey'
+            keyPassword 'a:12345678'
+            storeFile file('C:/Users/eladblau/Documents/Ben-Gurion University/4th grade/Semester A/Mobile applications/Project/keystore.jks')
+            storePassword 'a:12345678'
+        }
+    }
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+    defaultConfig {
+        applicationId "com.example.eladblau.app100"
+        minSdkVersion 21
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java', 'src/main/java/com.example.eladblau.app100/objects']
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    //These 2 lines were added to support PARSE db
+    compile fileTree(dir: 'libs', include: 'Parse-*.jar')
+    compile 'com.parse.bolts:bolts-android:1.+'
+    compile 'com.android.support:appcompat-v7:21.0.3'
+}

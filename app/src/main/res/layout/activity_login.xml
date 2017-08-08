@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.eladblau.app100.LoginActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/login_sign_up"
+        android:id="@+id/textView6"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/first_name"
+        android:ems="10"
+        android:id="@+id/editText_Name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:layout_alignParentStart="false"
+        android:layout_marginBottom="5dp"
+        />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/last_name"
+        android:ems="10"
+        android:id="@+id/editTextLastName"
+        android:layout_below="@+id/editText_Name"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="@string/phone_number"
+        android:ems="10"
+        android:id="@+id/editText_PhoneNumber"
+        android:layout_below="@+id/editTextLastName"
+        android:layout_alignStart="@+id/editTextLastName"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:id="@+id/button_LogIn"
+        android:background="@drawable/event_button"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/editText_PhoneNumber" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up"
+        android:id="@+id/button_SignUp"
+        android:background="@drawable/event_button"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/editText_PhoneNumber" />
+
+</RelativeLayout>

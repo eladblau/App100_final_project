@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:id="@+id/linear_layout1"
+        android:layout_margin="5dp"
+        android:background="@drawable/fragment_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/other"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/your_location"
+            android:id="@+id/textView2"
+            android:layout_margin="5dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:inputType="textPostalAddress"
+            android:ems="10"
+            android:id="@+id/editTextLocation"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/event_type"
+            android:id="@+id/textView3"
+            android:layout_margin="5dp" />
+
+        <Spinner
+            android:layout_width="179dp"
+            android:layout_height="55dp"
+            android:id="@+id/spinner"
+            android:spinnerMode="dropdown"
+            android:clickable="true"
+            android:dropDownWidth="match_parent"
+            android:focusable="false"
+            android:outlineProvider="bounds"
+            android:layout_margin="5dp"
+            style="@style/AppTheme"
+
+            android:theme="@style/Base.Widget.AppCompat.Spinner"
+            android:accessibilityLiveRegion="assertive" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/event_description"
+            android:id="@+id/textView4"
+            android:layout_margin="5dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:hint="@string/more_details"
+            android:id="@+id/editTextDescription"
+            android:layout_gravity="right"
+            android:layout_margin="5dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:layout_width="203dp"
+                android:layout_height="wrap_content">
+
+            </TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Life Threatening ?"
+                android:id="@+id/textView5"
+                android:layout_margin="5dp" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:id="@+id/radioButton_life_threatening_yes"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:id="@+id/radioButton_life_threatening_no" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:measureWithLargestChild="false"
+            android:layout_gravity="right"
+            android:weightSum="1">
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="65dp"
+                android:text="@string/send"
+                android:id="@+id/buttonSend"
+                android:layout_gravity="right"
+                android:layout_weight="0.51"
+                android:layout_margin="5dp"
+                android:background="@drawable/button" />
+
+            <ImageButton
+                android:layout_width="55dp"
+                android:layout_height="65dp"
+                android:id="@+id/imageButtonTakePhoto"
+                android:src="@drawable/camera_icon"
+                android:scaleType="fitCenter"
+                android:layout_gravity="right"
+                android:layout_column="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/button" />
+
+            <ImageButton
+                android:layout_width="55dp"
+                android:layout_height="65dp"
+                android:id="@+id/imageButtonAttachPic"
+                android:src="@drawable/attach_icon"
+                android:scaleType="fitCenter"
+                android:layout_column="1"
+                android:layout_weight="0.05"
+                android:layout_margin="5dp"
+                android:layout_gravity="right"
+                android:background="@drawable/button" />
+
+        </TableRow>
+
+        <ImageView
+            android:layout_width="115dp"
+            android:layout_height="136dp"
+            android:id="@+id/imageView11"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="5dp" />
+
+    </LinearLayout>
+</LinearLayout>
+    </ScrollView>
